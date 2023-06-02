@@ -1,0 +1,14 @@
+.accountIcon{
+    color: #fff;
+}
+
+.accountHolder{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.signupLink{
+    text-decoration: none;
+    color: #fff;
+}

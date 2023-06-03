@@ -1,0 +1,9 @@
+.cardItem {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+}
+.cardImage {
+  height: 300px;
+  object-fit: cover;
+}

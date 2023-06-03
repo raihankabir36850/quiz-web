@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import styles from "./card-style.module.css";
 
 function cardItem({ image, title }) {
+  const [show, setShow] = useState(false);
+
+  const mouseOverHandler = () => {
+    setShow(true);
+  };
+
+  const mouseEnterHandler = () => {
+    setShow(false);
+  };
+
   return (
-    <Card className={styles.cardItem}>
+    <Card
+      className={styles.cardItem}
+      onMouseOver={mouseOverHandler}
+      onMouseOut={mouseEnterHandler}
+    >
       <Card.Img variant="top" src={image} className={styles.cardImage} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
       </Card.Body>
+      <div
+        className={styles.cardOverlay}
+        style={
+          show === true
+            ? { opacity: 1, transition: "opacity 0.2s ease-in-out" }
+            : { opacity: 0, transition: "opacity 0.2s ease-in-out" }
+        }
+      >
+        <a href="#" className={styles.cardOverlayLink}>
+          View More
+        </a>
+      </div>
     </Card>
   );
 }

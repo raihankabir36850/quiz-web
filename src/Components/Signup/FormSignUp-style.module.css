@@ -1,0 +1,21 @@
+.signupForm {
+    padding: 0 12px;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    box-shadow: -1px 0px 5px 4px rgba(0,0,0,0.39);
+}
+
+.formLabel {
+    font-weight:bold;
+}
+
+.formTitle{
+    margin-top: 20px;
+}
+
+.formTitleContainer{
+    text-align: center;
+}
+.formSubTitle{
+    color: #a19d9d;
+}

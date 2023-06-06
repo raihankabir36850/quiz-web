@@ -28,9 +28,14 @@ function FormSignUp() {
           <Form.Control type='email' placeholder='Enter email' />
         </Form.Group>
 
-        <Form.Group controlId='formGridPassword'>
+        <Form.Group controlId='formGridPassword' as={Col}>
           <Form.Label className={styles.formLabel}>Password</Form.Label>
           <Form.Control type='password' placeholder='Password' />
+        </Form.Group>
+
+        <Form.Group controlId='formGridConfirmPassword' as={Col}>
+          <Form.Label className={styles.formLabel}>Confirm Password</Form.Label>
+          <Form.Control type='password' placeholder='Confirm password' />
         </Form.Group>
       </Row>
 

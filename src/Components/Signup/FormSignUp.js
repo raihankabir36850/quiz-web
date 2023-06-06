@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -12,9 +13,14 @@ function FormSignUp() {
         <h5 className={styles.formSubTitle}>Please fill in this form to create an account!</h5>
       </div>
       <Row className='mb-3'>
-        <Form.Group controlId='formGridUser'>
-          <Form.Label className={styles.formLabel}>Username</Form.Label>
-          <Form.Control type='text' placeholder='Enter user name' />
+        <Form.Group controlId='formGridUser' as={Col}>
+          <Form.Label className={styles.formLabel}>First Name</Form.Label>
+          <Form.Control type='text' placeholder='Enter First name' />
+        </Form.Group>
+
+        <Form.Group controlId='formGridUser' as={Col}>
+          <Form.Label className={styles.formLabel}>Last Name</Form.Label>
+          <Form.Control type='text' placeholder='Enter Last name' />
         </Form.Group>
 
         <Form.Group controlId='formGridEmail'>

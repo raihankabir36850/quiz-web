@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import styles from "./FormSignUp-style.module.css";
 import Text from "../Text/Text";
+import { Link } from "react-router-dom";
 
 function FormSignUp() {
   return (
@@ -54,7 +55,7 @@ function FormSignUp() {
       </Button>
       <div className={styles.signupInstead}>
         <Text text="Already have an account?" />
-        <a href="#">Login</a>
+        <Link to="/login">Login</Link>
         <span>instead</span>
       </div>
     </Form>

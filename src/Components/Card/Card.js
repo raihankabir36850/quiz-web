@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import styles from "./card-style.module.css";
 
-function cardItem({ image, title }) {
+function cardItem({ image, title, path }) {
   const [show, setShow] = useState(false);
 
   const mouseOverHandler = () => {
@@ -31,9 +32,9 @@ function cardItem({ image, title }) {
             : { opacity: 0, transition: "opacity 0.2s ease-in-out" }
         }
       >
-        <a href="#" className={styles.cardOverlayLink}>
+        <Link to={path} className={styles.cardOverlayLink}>
           View More
-        </a>
+        </Link>
       </div>
     </Card>
   );

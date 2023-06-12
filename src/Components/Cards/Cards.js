@@ -8,10 +8,10 @@ import styles from "./cards-style.module.css";
 function Cards() {
   return (
     <Row xs={1} md={2} className={`g-4 ${styles.cardContainer}`}>
-      {topics.map(({ id, image, title }) => {
+      {topics.map(({ id, image, title, path }) => {
         return (
           <Col key={id}>
-            <Card id={id} image={image} title={title} />
+            <Card id={id} image={image} title={title} path={path} />
           </Col>
         );
       })}

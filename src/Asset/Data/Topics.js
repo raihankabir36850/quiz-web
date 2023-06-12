@@ -9,31 +9,37 @@ const topics = [
     id: "nature",
     image: `${photography}`,
     title: "Nature Photography",
+    path: "/quiz/nature-photography",
   },
   {
     id: "artificial",
     image: `${artificial}`,
     title: "Artificial Intelligence",
+    path: "/quiz/artificial-intelligence",
   },
   {
     id: "cooking",
     image: `${cooking}`,
     title: "Healthy Cooking",
+    path: "/quiz/Healthy-Cooking",
   },
   {
     id: "travel",
     image: `${travel}`,
     title: "Travel Destinations",
+    path: "/quiz/travel-Destinations",
   },
   {
     id: "development",
     image: `${fitness}`,
     title: "Web Development",
+    path: "/quiz/Web-Development",
   },
   {
     id: "fitness",
     image: `${development}`,
     title: "Fitness and Exercise",
+    path: "/quiz/Fitness-Exercise",
   },
 ];
 

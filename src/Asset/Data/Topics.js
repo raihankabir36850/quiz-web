@@ -6,40 +6,40 @@ import fitness from "../Images/fitness.jpg";
 import development from "../Images/development.jpg";
 const topics = [
   {
-    id: "nature",
+    id: 20,
     image: `${photography}`,
-    title: "Nature Photography",
-    path: "/quiz/nature-photography",
+    title: "Mythology",
+    path: "/quiz/mythology",
   },
   {
-    id: "artificial",
+    id: 21,
     image: `${artificial}`,
-    title: "Artificial Intelligence",
-    path: "/quiz/artificial-intelligence",
+    title: "Sports",
+    path: "/quiz/sports",
   },
   {
-    id: "cooking",
+    id: 22,
     image: `${cooking}`,
-    title: "Healthy Cooking",
-    path: "/quiz/Healthy-Cooking",
+    title: "Geography",
+    path: "/quiz/geography",
   },
   {
-    id: "travel",
+    id: 23,
     image: `${travel}`,
-    title: "Travel Destinations",
-    path: "/quiz/travel-Destinations",
+    title: "History",
+    path: "/quiz/history",
   },
   {
-    id: "development",
+    id: 24,
     image: `${fitness}`,
-    title: "Web Development",
-    path: "/quiz/Web-Development",
+    title: "Politics",
+    path: "/quiz/politics",
   },
   {
-    id: "fitness",
+    id: 27,
     image: `${development}`,
-    title: "Fitness and Exercise",
-    path: "/quiz/Fitness-Exercise",
+    title: "Animmal",
+    path: "/quiz/animal",
   },
 ];
 

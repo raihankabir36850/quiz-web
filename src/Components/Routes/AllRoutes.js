@@ -15,7 +15,11 @@ function AllRoutes() {
       <Route exact path="/signup" element={<Signup />} />
       {topics.map(({ id, path, title }) => {
         return (
-          <Route path={path} element={<Quiz quizType={title} />} key={id} />
+          <Route
+            path={path}
+            element={<Quiz quizType={title} categoryID={id} />}
+            key={id}
+          />
         );
       })}
     </Routes>
